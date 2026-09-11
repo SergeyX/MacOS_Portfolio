@@ -20,7 +20,7 @@ const renderText = (text: string, className: string, baseWeight: number = 400) =
 };
 
 const setupTextHover = (container: HTMLDivElement | null, type: string) => {
-    if (!container) return;
+    if (!container) return () => {};
     const letters = container?.querySelectorAll('span');
     const { min, max, default: base } = FONT_WEIGHTS[type];
 
