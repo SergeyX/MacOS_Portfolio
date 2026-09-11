@@ -86,3 +86,11 @@ export type AboutLocationChildrenType = WorkLocation2ChildrenType & {
 export type AboutLocationType = Omit<WorkLocationType, 'children'> & {
     children?: AboutLocationChildrenType[];
 };
+
+export type WindowConfigItemType = {
+    isOpen: boolean;
+    zIndex: number;
+    data: null | number;
+};
+
+export type WindowConfigType = Record<string, WindowConfigItemType>;
