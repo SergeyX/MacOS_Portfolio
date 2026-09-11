@@ -1,12 +1,14 @@
 import type {
     AboutLocationType,
     BlogPostsType,
-    DocAppsType, GalleryType,
+    DocAppsType,
+    GalleryType,
     NavIconsType,
     NavLinksType,
     PhotosLinksType,
     SocialsType,
-    TechStackType, WorkLocationType
+    TechStackType, WindowConfigType,
+    WorkLocationType
 } from './types.ts';
 
 export const navLinks: NavLinksType[] = [
@@ -501,7 +503,7 @@ export const locations = {
 
 const INITIAL_Z_INDEX = 1000;
 
-const WINDOW_CONFIG = {
+const WINDOW_CONFIG: WindowConfigType = {
     finder: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
     contact: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
     resume: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
